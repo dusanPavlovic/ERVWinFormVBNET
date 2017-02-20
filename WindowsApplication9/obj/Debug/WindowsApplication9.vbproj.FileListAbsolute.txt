@@ -13,3 +13,18 @@ c:\users\dusan.pavlovic\documents\visual studio 2012\Projects\WindowsApplication
 c:\users\dusan.pavlovic\documents\visual studio 2012\Projects\WindowsApplication9\WindowsApplication9\obj\Debug\WindowsApplication9.RegisterTravelInfoControl.resources
 c:\users\dusan.pavlovic\documents\visual studio 2012\Projects\WindowsApplication9\WindowsApplication9\obj\Debug\WindowsApplication9.PresencePreviewControl.resources
 c:\users\dusan.pavlovic\documents\visual studio 2012\Projects\WindowsApplication9\WindowsApplication9\obj\Debug\WindowsApplication9.ReportsControl.resources
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\bin\Debug\WindowsApplication9.exe.config
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\obj\Debug\WindowsApplication9.xml
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\bin\Debug\WindowsApplication9.exe
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\bin\Debug\WindowsApplication9.pdb
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\bin\Debug\WindowsApplication9.xml
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\obj\Debug\WindowsApplication9.Form1.resources
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\obj\Debug\WindowsApplication9.Resources.resources
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\obj\Debug\WindowsApplication9.CheckInOutControl.resources
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\obj\Debug\WindowsApplication9.RegisterTravelInfoControl.resources
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\obj\Debug\WindowsApplication9.PresencePreviewControl.resources
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\obj\Debug\WindowsApplication9.ReportsControl.resources
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\obj\Debug\WindowsApplication9.vbproj.GenerateResource.Cache
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\obj\Debug\WindowsApplication9.exe.licenses
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\obj\Debug\WindowsApplication9.exe
+D:\repos\Projects\ERVVBNET\ERVWinFormVBNET\WindowsApplication9\obj\Debug\WindowsApplication9.pdb

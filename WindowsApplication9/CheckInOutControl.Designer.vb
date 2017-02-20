@@ -22,28 +22,77 @@ Partial Class CheckInOutControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.components = New System.ComponentModel.Container()
+        Me.CheckInButton = New System.Windows.Forms.Button()
+        Me.GaugeControl1 = New DevExpress.XtraGauges.Win.GaugeControl()
+        Me.DigitalGauge1 = New DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge()
+        Me.DigitalBackgroundLayerComponent1 = New DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        CType(Me.DigitalGauge1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DigitalBackgroundLayerComponent1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'CheckInButton
         '
-        Me.Button1.Location = New System.Drawing.Point(106, 111)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.CheckInButton.Location = New System.Drawing.Point(360, 216)
+        Me.CheckInButton.Name = "CheckInButton"
+        Me.CheckInButton.Size = New System.Drawing.Size(75, 23)
+        Me.CheckInButton.TabIndex = 0
+        Me.CheckInButton.Text = "CheckIn"
+        Me.CheckInButton.UseVisualStyleBackColor = True
         '
-        'UserControl1
+        'GaugeControl1
+        '
+        Me.GaugeControl1.AutoLayout = False
+        Me.GaugeControl1.Gauges.AddRange(New DevExpress.XtraGauges.Base.IGauge() {Me.DigitalGauge1})
+        Me.GaugeControl1.Location = New System.Drawing.Point(25, 205)
+        Me.GaugeControl1.Name = "GaugeControl1"
+        Me.GaugeControl1.Size = New System.Drawing.Size(250, 250)
+        Me.GaugeControl1.TabIndex = 1
+        '
+        'DigitalGauge1
+        '
+        Me.DigitalGauge1.AppearanceOff.ContentBrush = New DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#EAECF1")
+        Me.DigitalGauge1.AppearanceOn.ContentBrush = New DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#7184BA")
+        Me.DigitalGauge1.BackgroundLayers.AddRange(New DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent() {Me.DigitalBackgroundLayerComponent1})
+        Me.DigitalGauge1.Bounds = New System.Drawing.Rectangle(5, 5, 238, 238)
+        Me.DigitalGauge1.DigitCount = 5
+        Me.DigitalGauge1.Name = "DigitalGauge1"
+        Me.DigitalGauge1.Padding = New DevExpress.XtraGauges.Core.Base.TextSpacing(26, 20, 26, 20)
+        Me.DigitalGauge1.Text = "00,000"
+        '
+        'DigitalBackgroundLayerComponent1
+        '
+        Me.DigitalBackgroundLayerComponent1.BottomRight = New DevExpress.XtraGauges.Core.Base.PointF2D(265.8125!, 99.9625!)
+        Me.DigitalBackgroundLayerComponent1.Name = "digitalBackgroundLayerComponent1"
+        Me.DigitalBackgroundLayerComponent1.ShapeType = DevExpress.XtraGauges.Core.Model.DigitalBackgroundShapeSetType.Style16
+        Me.DigitalBackgroundLayerComponent1.TopLeft = New DevExpress.XtraGauges.Core.Base.PointF2D(26.0!, 0.0!)
+        Me.DigitalBackgroundLayerComponent1.ZOrder = 1000
+        '
+        'Timer1
+        '
+        '
+        'CheckInOutControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Button1)
-        Me.Name = "UserControl1"
-        Me.Size = New System.Drawing.Size(558, 483)
+        Me.Controls.Add(Me.GaugeControl1)
+        Me.Controls.Add(Me.CheckInButton)
+        Me.Name = "CheckInOutControl"
+        Me.Size = New System.Drawing.Size(849, 761)
+        CType(Me.DigitalGauge1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DigitalBackgroundLayerComponent1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents CheckInButton As System.Windows.Forms.Button
+    Friend WithEvents GaugeControl1 As DevExpress.XtraGauges.Win.GaugeControl
+    Friend WithEvents DigitalGauge1 As DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge
+    Private WithEvents DigitalBackgroundLayerComponent1 As DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+
+
+
+
 
 End Class

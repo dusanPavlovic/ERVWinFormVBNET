@@ -25,15 +25,15 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Me.DocumentManager1 = New DevExpress.XtraBars.Docking2010.DocumentManager(Me.components)
         Me.TabbedView1 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
-        Me.Document1 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.Document(Me.components)
         Me.DocumentGroup1 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.DocumentGroup(Me.components)
+        Me.Document1 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.Document(Me.components)
         Me.Document2 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.Document(Me.components)
         Me.Document3 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.Document(Me.components)
         Me.Document4 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.Document(Me.components)
         CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabbedView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Document1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DocumentGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Document1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Document2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Document3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Document4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,14 +50,14 @@ Partial Class Form1
         Me.TabbedView1.DocumentGroups.AddRange(New DevExpress.XtraBars.Docking2010.Views.Tabbed.DocumentGroup() {Me.DocumentGroup1})
         Me.TabbedView1.Documents.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseDocument() {Me.Document1, Me.Document2, Me.Document3, Me.Document4})
         '
+        'DocumentGroup1
+        '
+        Me.DocumentGroup1.Items.AddRange(New DevExpress.XtraBars.Docking2010.Views.Tabbed.Document() {Me.Document1, Me.Document2, Me.Document3, Me.Document4})
+        '
         'Document1
         '
         Me.Document1.Caption = "Check In/Out"
         Me.Document1.ControlName = "CheckInOutDocument"
-        '
-        'DocumentGroup1
-        '
-        Me.DocumentGroup1.Items.AddRange(New DevExpress.XtraBars.Docking2010.Views.Tabbed.Document() {Me.Document1, Me.Document2, Me.Document3, Me.Document4})
         '
         'Document2
         '
@@ -78,13 +78,13 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(693, 569)
+        Me.ClientSize = New System.Drawing.Size(818, 645)
         Me.Name = "Form1"
         Me.Text = "ERV Tool"
         CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TabbedView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Document1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DocumentGroup1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Document1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Document2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Document3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Document4, System.ComponentModel.ISupportInitialize).EndInit()

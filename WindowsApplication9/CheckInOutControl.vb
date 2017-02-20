@@ -1,3 +1,20 @@
-﻿Public Class CheckInOutControl
+﻿
 
+Public Class CheckInOutControl
+
+
+
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim time As New DateTime
+
+        time = DateTime.Now
+
+        DigitalGauge1.Text = time
+    End Sub
+
+    Private Sub CheckInOutControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DigitalGauge1.DigitCount = 9
+        Timer1.Start()
+    End Sub
 End Class
