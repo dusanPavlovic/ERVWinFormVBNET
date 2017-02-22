@@ -78,6 +78,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckInOut\CheckInOutPresenter.vb" />
+    <Compile Include="CheckInOut\CheckInOutVM.vb" />
+    <Compile Include="Employee.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +88,8 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CheckInOut\ICheckInOutView.vb" />
+    <Compile Include="IRepository.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -100,6 +105,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ObjectSource.vb" />
+    <Compile Include="PresencePreview\IPresenceView.vb" />
+    <Compile Include="PresencePreview\PresencePresenter.vb" />
+    <Compile Include="PresencePreview\PresenceVM.vb" />
     <Compile Include="ReportsControl.Designer.vb">
       <DependentUpon>ReportsControl.vb</DependentUpon>
     </Compile>
@@ -124,6 +133,7 @@
     <Compile Include="PresencePreviewControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Repository.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -161,6 +171,7 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
