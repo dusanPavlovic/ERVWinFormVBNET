@@ -8,12 +8,21 @@
     Sub Init()
         Dim viewModel = GetVievModel()
 
+        View.Show(viewModel)
+
     End Sub
 
     Function GetVievModel() As CheckInOutVM
-        Dim model = New CheckInOutVM
-        Return model
+        Dim vm = New CheckInOutVM
+        Return vm
     End Function
+
+
+    Sub SaveCheckInTime(time As String, id As Integer)
+        Dim repo = New Repository
+        repo.SaveCheckInTime(time, id)
+    End Sub
+
 
 
 End Class

@@ -20,7 +20,22 @@
         ListBox1.DataSource = viewModel._employees
         ListBox1.DisplayMember = "EmployeeName"
 
+       
     End Sub
 
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim presentEmp = presenter.ShowAbsenceEmployees()
+
+
+        'Dim present = 
+
+        ' present = presenter.ShowAbsenceEmployees()
+
+        ListBox2.DataSource = presentEmp
+        ListBox2.DisplayMember = "EmployeeName"
+
+    End Sub
+
+   
 End Class
