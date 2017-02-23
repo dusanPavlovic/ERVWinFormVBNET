@@ -1,5 +1,12 @@
-﻿Public Class Repository
+﻿Imports System.Data.Entity
+
+Public Class Repository
     Implements IRepository
+
+    Private db As ERVContext
+    Sub New(context As DbContext)
+        Me.db = context
+    End Sub
 
 
 
@@ -10,8 +17,11 @@
 
 
     Public Sub SaveCheckInTime(time As String, id As Integer) Implements IRepository.SaveCheckInTime
-        Dim EmployecCheckInTime = New ObjectSource
-        EmployecCheckInTime.SaveCheckInTime(time, id)
+        Using db As New ERVContext
+            db.RegisterTimes.Add(New RegisterTime(time, id))
+            db.SaveChanges()
+        End Using
+
     End Sub
 
     'Public Function UserTimes() As List(Of RegisterTimes)

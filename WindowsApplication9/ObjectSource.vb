@@ -22,12 +22,12 @@
 
 
 
-    Sub SaveCheckInTime(time As String, id As Integer)
-        _times = New List(Of RegisterTime)
-        Dim regTimes = New RegisterTime(time, id)
-        _times.Add(regTimes)
+    'Sub SaveCheckInTime(time As String, id As Integer)
+    '    _times = New List(Of RegisterTime)
+    '    Dim regTimes = New RegisterTime(time, id)
+    '    _times.Add(regTimes)
 
-    End Sub
+    'End Sub
 
     Function Times() As List(Of RegisterTime)
         Return _times

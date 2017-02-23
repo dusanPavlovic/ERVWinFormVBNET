@@ -51,7 +51,7 @@
 
 
     Function GetViewModel() As PresenceVM
-        Dim repo = New Repository
+        Dim repo = New Repository(New ERVContext)
         Dim vm = New PresenceVM()
         vm._employees = repo.ListAll()
 

@@ -5,5 +5,10 @@
     Property CheckType As CheckType
     Public Overridable Property Employee As Employee
 
+    Sub New(time As String, empId As Integer)
+        Me.TimeChecked = time
+        Me.EmployeeId = empId
+    End Sub
+
 
 End Class
