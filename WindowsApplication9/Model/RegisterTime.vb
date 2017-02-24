@@ -5,9 +5,10 @@
     Property CheckType As CheckType
     Public Overridable Property Employee As Employee
 
-    Sub New(time As String, empId As Integer)
+    Sub New(time As String, empId As Integer, checkType As CheckType)
         Me.TimeChecked = time
         Me.EmployeeId = empId
+        Me.CheckType = checkType
     End Sub
 
 

@@ -3,6 +3,7 @@
 Public Class Repository
     Implements IRepository
 
+
     Private db As ERVContext
     Sub New(context As DbContext)
         Me.db = context
@@ -16,9 +17,9 @@ Public Class Repository
     End Function
 
 
-    Public Sub SaveCheckInTime(time As String, id As Integer) Implements IRepository.SaveCheckInTime
+    Public Sub SaveCheckTime(time As String, id As Integer, checkType As CheckType) Implements IRepository.SaveCheckTime
         Using db As New ERVContext
-            db.RegisterTimes.Add(New RegisterTime(time, id))
+            db.RegisterTimes.Add(New RegisterTime(time, id, checkType))
             db.SaveChanges()
         End Using
 
@@ -29,4 +30,5 @@ Public Class Repository
     '    Return EmployecCheckInTime.Times()
     'End Function
 
+   
 End Class

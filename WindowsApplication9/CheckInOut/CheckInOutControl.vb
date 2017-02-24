@@ -31,6 +31,7 @@ Public Class CheckInOutControl
     Private Sub CheckInOutControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DigitalGauge1.DigitCount = 9
         Timer1.Start()
+        CheckOutButton.Enabled = False
     End Sub
 
     Private Sub CheckInButton_Click(sender As Object, e As EventArgs) Handles CheckInButton.Click
@@ -38,25 +39,40 @@ Public Class CheckInOutControl
         Dim checkInTime As New DateTime
         checkInTime = DigitalGauge1.Text.ToString()
 
-        Label1.Text = checkInTime
+        CheckInTimeLabel.Text = checkInTime
 
         CheckInButton.Enabled = False
+        CheckOutButton.Enabled = True
 
 
-
-        'In real app id is id of loged user
+        'In real app id is id of the logged in user( windows credentials)
         Dim EmployeeId As Integer
         EmployeeId = 1
 
         Dim time As String
-        time = Label1.Text
+        time = CheckInTimeLabel.Text
 
 
-        presenter.SaveCheckInTime(time, EmployeeId)
+        presenter.SaveCheckTime(time, EmployeeId, CheckType.CheckIn)
 
     End Sub
 
     Public Sub Show1(viewModel As CheckInOutVM) Implements ICheckInOutView.Show
+
+    End Sub
+
+    Private Sub CheckOutButton_Click(sender As Object, e As EventArgs) Handles CheckOutButton.Click
+        Dim checkOutTime As New DateTime
+        checkOutTime = DigitalGauge1.Text.ToString()
+        CheckOutLabel.Text = checkOutTime
+
+        Dim EmployeeId As Integer
+        EmployeeId = 1
+        Dim time As String
+        time = CheckOutLabel.Text
+
+        presenter.SaveCheckTime(time, EmployeeId, CheckType.CheckOut)
+        CheckOutButton.Enabled = False
 
     End Sub
 End Class

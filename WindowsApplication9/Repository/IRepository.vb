@@ -1,7 +1,7 @@
 ﻿Public Interface IRepository
     Function ListAll() As IEnumerable(Of Employee)
 
-    Sub SaveCheckInTime(time As String, id As Integer)
+    Sub SaveCheckTime(time As String, id As Integer, checkType As CheckType)
 
 
 

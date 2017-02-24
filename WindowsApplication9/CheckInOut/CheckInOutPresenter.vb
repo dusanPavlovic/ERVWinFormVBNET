@@ -18,11 +18,12 @@
     End Function
 
 
-    Sub SaveCheckInTime(time As String, id As Integer)
+    Sub SaveCheckTime(time As String, id As Integer, checkType As CheckType)
         Dim repo = New Repository(New ERVContext)
-        repo.SaveCheckInTime(time, id)
+        repo.SaveCheckTime(time, id, checkType)
     End Sub
 
+  
 
 
 End Class
