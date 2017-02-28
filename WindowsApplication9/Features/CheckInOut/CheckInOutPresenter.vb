@@ -19,7 +19,7 @@
 
 
     Sub SaveCheckTime(time As String, id As Integer, checkType As CheckType)
-        Dim repo = New Repository(New ERVContext)
+        Dim repo = New Repository()
         repo.SaveCheckTime(time, id, checkType)
     End Sub
 

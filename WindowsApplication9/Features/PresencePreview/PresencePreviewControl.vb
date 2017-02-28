@@ -37,5 +37,16 @@
 
     End Sub
 
-   
+
+
+
+
+    Private Sub ShowEmpTimesButton_Click(sender As Object, e As EventArgs) Handles ShowEmpTimesButton.Click
+        'Dim dateEmp As String
+        'dateEmp = DateEdit1.EditValue.ToString()
+
+        Dim dateEmp As Date = Nothing
+        dateEmp = DateEdit1.EditValue
+
+    End Sub
 End Class
